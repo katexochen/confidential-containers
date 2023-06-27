@@ -391,7 +391,7 @@ automatically blocked from merging.
 
 If you raise a PR to update the vendored copy of one or more golang packages,
 after running the
-[`dep`](https://github.com/confidential-containers/community/blob/main/VENDORING.md) command, ensure you add any modified files under the `vendor/` directory to Git before committing the changes:
+[`dep`](https://github.com/confidential-containers/confidential-containers/blob/main/VENDORING.md) command, ensure you add any modified files under the `vendor/` directory to Git before committing the changes:
 
 ```sh
 $ git add vendor/
@@ -664,9 +664,8 @@ is also acceptable to include additional or
 
 ### Verification
 
-Correct formatting of the PR patches is verified using the
-[`checkcommits`](https://github.com/kata-containers/tests/tree/main/cmd/checkcommits)
-tool.
+Correct formatting of the PR patches is verified using a
+[`commit-message-check` workflow](https://github.com/confidential-containers/cloud-api-adaptor/blob/main/.github/workflows/commit-message-check.yaml).
 
 ### Examples
 
